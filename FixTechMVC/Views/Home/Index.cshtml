@@ -1,8 +1,98 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-5">
+
+    <h1 class="display-4 fw-bold">
+        🔧 FixTech
+    </h1>
+
+    <h3 class="text-primary">
+        Sistema de Gerenciamento de Assistência Técnica
+    </h3>
+
+    <p class="lead mt-3">
+        Gerencie serviços, clientes e ordens de serviço de forma simples,
+        rápida e segura.
+    </p>
+
+    <hr />
+
+    <div class="row mt-5">
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h2>🛠</h2>
+
+                    <h4>Serviços</h4>
+
+                    <p>
+                        Cadastre, edite e acompanhe todos os serviços da assistência técnica.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h2>📱</h2>
+
+                    <h4>Celulares</h4>
+
+                    <p>
+                        Controle reparos de telas, baterias, conectores e muito mais.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h2>💻</h2>
+
+                    <h4>Computadores</h4>
+
+                    <p>
+                        Gerencie formatações, upgrades e manutenção de notebooks e PCs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mt-5">
+
+        <a asp-controller="Servicos"
+           asp-action="Index"
+           class="btn btn-primary btn-lg">
+
+            Acessar Serviços
+
+        </a>
+
+    </div>
+
 </div>

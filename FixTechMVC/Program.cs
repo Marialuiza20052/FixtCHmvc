@@ -1,5 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+using FixTechMVC.Data;
+using Microsoft.EntityFrameworkCore;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=fixtech.db"));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

@@ -1,0 +1,28 @@
+﻿@model FixTechMVC.Models.Servico
+
+@{
+    ViewData["Title"] = "Excluir Serviço";
+}
+
+<h1>Excluir Serviço</h1>
+
+<div class="alert alert-danger">
+    Tem certeza que deseja excluir este serviço?
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <p><strong>Nome:</strong> @Model.Nome</p>
+        <p><strong>Descrição:</strong> @Model.Descricao</p>
+        <p><strong>Preço:</strong> R$ @Model.Preco.ToString("N2")</p>
+    </div>
+</div>
+
+<br />
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
